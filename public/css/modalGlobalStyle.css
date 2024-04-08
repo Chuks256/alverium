@@ -34,6 +34,18 @@
 
 .bolt{
     width: 40px;
+    transition: linear.100ms;
+    animation: boltAnim 1ms linear 1ms infinite;
+    transform: scale(70%);
+}
+
+@keyframes boltAnim {
+    from{
+        transform: scale(70%);
+    }
+    to{
+        transform: scale(100%);
+    }
 }
 
 .modalDetails{
