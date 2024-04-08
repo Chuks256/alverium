@@ -14,7 +14,7 @@
 }
 
 .colorTxt{
-    color:rgb(255, 121, 73);
+    color:rgb(247,251,54,100%);
     font-family: "AveriumBlack";
 }
 
@@ -41,20 +41,27 @@
 
 .missionBox,.visionBox{
     display: flex;
-    gap:0.5em;
+    gap:1em;
     flex-direction: column;
     padding:25px;
+    max-width:400px;
     border-radius:10px;
     height:260px;
-    background-color: rgb(255, 121, 73);
+    background-color: rgb(252, 255, 103)
 }
 
 .visionBox{
-    background-color: rgb(255, 222, 73);
+    background-color: rgb(247,251,54,100%);
 }
 
 .missionDetails,.visionDetails{
     font-size:17px;
+}
+
+.visionContainerLogo,.missionContainerLogo{
+    display:flex;
+    align-items: center;
+    gap:1em;
 }
 
 .subMissionBoxContainer{
@@ -108,11 +115,96 @@
 
 .seeMoreCourseBtn{
     padding:10px;
-    background-color:rgb(255, 178, 152);
+    background-color:rgb(254, 255, 198);
     border-radius:15px;
     font-weight:bold;
     width:150px;
 }
+
+/*  choose us section beginning */
+.whyChooseUsSection{
+    margin:100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2em;
+}
+
+.chooseTxt{
+    font-size:45px;
+    font-family: "AveriumBlack";
+}
+
+.reasonsGridContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:2em;
+}
+
+.reasonOne{
+    padding:20px;
+    width:300px;
+    height:300px;
+    display: flex;
+    background:rgb(255, 255, 194);
+    transition: linear,100ms;
+    transform: scale(90%);
+    cursor: pointer;
+    flex-direction: column;
+    border-radius:10px;
+    gap:1em;
+}
+
+.reasonOne:hover{
+    transform: scale(100%);
+    background-color: rgb(252, 255, 103);
+}
+
+/*  choose us section ending */
+
+/* faq beginning  */
+
+.faqSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.faqTxt{
+    font-size:45px;
+    font-family: "AveriumBlack";
+}
+
+.questionsFlexContainer{
+    display: flex;
+    flex-direction:column;
+    margin:40px;
+    gap:1em;
+}
+
+.faqQuestionBoxOne,.faqQuestionBoxTwo,.faqQuestionBoxThree,.faqQuestionBoxFour,.faqQuestionBoxFive{
+    width:100%;
+    padding:20px;
+    background:rgb(255, 255, 194);
+    cursor: pointer;
+    border-radius:5px;
+    display: flex;
+    flex-direction: column;
+    gap:2em;
+    transition: linear,1000ms;
+}
+
+.faqQuestionOneAns,.faqQuestionTwoAns,.faqQuestionThreeAns,.faqQuestionFourAns,.faqQuestionFiveAns{
+    display: none;
+}
+
+h4{
+    color:rgb(83, 83, 83);
+}
+
+/* faq ending */
 
 /* contact section beginning */
 .contactSection{
@@ -144,7 +236,7 @@
     flex-direction: column;
     gap:1em;
     padding:30px;
-    background-color:rgb(255, 212, 197);
+    background-color:rgb(255, 255, 194);;
     width: 350px;
     border-radius:5px;
 }
@@ -153,7 +245,7 @@ input,textarea{
     border-style:solid;
     border-color:transparent;
     padding:10px;
-    background-color:rgb(250, 190, 168);
+    background-color:rgb(255, 255, 215);;
     font-size:15px;
     border-radius:5px;
     outline: none;
@@ -163,12 +255,16 @@ textarea{
    resize: none; 
 }
 
+.contact_details_header_txt{
+    font-family:"AveriumBlack";
+}
+
 .form_submit_btn{
     border-radius:5px;
     padding:10px;
     font-weight: bold;
-    background-color:rgb(255, 121, 73);
-    color:white;
+    background-color:rgb(247,251,54,100%);;
+    color:black;
     transition:linear,100ms;
 }
 
@@ -255,6 +351,36 @@ footer{
     .courseImg{
         width:350px;
     }
+
+    /* reason section */
+
+.chooseTxt{
+    text-align: center;
+    font-size:35px;
+    width: 300px;
+}
+.reasonsGridContainer{
+    justify-content: center;
+    display: flex;
+    gap:1em;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.reasonOne{
+    width:350px;
+}
+
+    /* reason section */
+
+    /* faq  section */
+    .faqTxt{
+        text-align: center;
+        font-size:35px;
+    }
+    /* faq section */
+
 
     /*  reach out || contact form  */
 .contactTxt{
