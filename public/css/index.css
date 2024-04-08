@@ -78,6 +78,11 @@
     top:-150px;
     max-width:400px;
     left:0px;
+    transition:linear,10000ms;
+    animation-name:oval;
+    animation-duration:2000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 nav{
