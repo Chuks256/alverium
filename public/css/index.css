@@ -1,0 +1,228 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mobileNav{
+    display: none;
+}
+
+
+.headerLogoContainer{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    padding:20px;
+}
+
+
+.heroContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin:50px;
+    gap:0.6em;
+}
+
+.handOne{
+    width:140px;
+}
+
+.heroTxtContainer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width:450px;
+    gap:0.5em;
+}
+
+.heroMainTxt{
+    font-size:50px;
+    font-family: "AveriumBlack";
+}
+
+.heroDetails{
+    font-size:20px;
+}
+
+.heroBtnContainer{
+    display: flex;
+    gap:2em;
+    justify-content: center;
+    margin:20px;
+    align-items: center;
+}
+
+.heroEnrolBtn{
+    font-weight: bold;
+    color:white;
+    background-color:rgb(26, 26, 26);
+    padding:10px;
+    width:100px;
+    border-radius:5px;
+    transition:linear,100ms;
+}
+
+.heroEnrolBtn:active{
+    transform:scale(90%)
+}
+
+.prismOne{
+    position:absolute;
+    top:-150px;
+    width:400px;
+    left:0px;
+}
+
+.blackOne{
+    width:400px;
+    left:943px;
+    position:absolute;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top:600px;
+    left:420px;
+    z-index:2;
+}
+
+.navbarContainerList{
+    display: flex;
+    gap:1.5em;
+    background-color:rgb(26, 26, 26);
+    padding:20px;
+    width:460px;
+    align-items: center;
+    justify-content: center;
+    border-radius:20px;
+}
+
+.navOpt{
+    color:white;
+}
+
+.navOpt:hover{
+    font-weight:bold;
+}
+
+.navCall{
+    background:white;
+    width:70px;
+    border-radius:6px;
+    align-items: center;
+    justify-content: center;
+}
+
+.callimg{
+width:20px;
+}
+
+
+/* header gateway container */
+.gatewayTxtContainer{
+    display: flex;
+    font-size: 30px;
+    margin-top:80px;
+}
+
+.gatewayTxt{
+    font-family:"AveriumBlack" ;
+    width:570px;
+    text-align: center;
+    z-index: 1;
+}
+
+.ovalPrism{
+    top:800px;
+    position: absolute;
+    left:760px;
+    width:200px;
+}
+
+.gatewayOne{
+    color:rgb(255, 121, 73);
+}
+
+.gatewayTwo{
+    color:white;
+}
+
+.gatewayOne,.gatewayTwo{
+font-family:"AveriumBlack"
+}
+
+@media screen and (max-width:1000px){
+
+    .mobileNav{
+        display: flex;
+        padding:15px;
+        background-color: rgb(31, 30, 30);
+        border-radius:100%;
+        align-items: center;
+        position: fixed;
+        top:570px;
+        z-index:4;
+        transition:linear,100ms;
+        margin-left:40%;
+        justify-content: center;
+    }
+
+    .mobileNav:active{
+        transform:scale(70%);
+    }
+
+    .mobileNavImg{
+        filter: invert(100%);
+        width:25px;
+    }
+    .prismOne,.blackOne,.navbarContainerList{
+        display: none;
+    }
+
+    .heroMainTxt{
+        font-size:40px;
+    }
+
+    .heroDetails{
+        font-size:16px;
+    }
+
+    .heroBtnContainer{
+        flex-direction:column;
+        gap:1.5em;
+    }
+
+    .heroEnrolBtn{
+        width:300px;
+        padding:12px;
+    }
+
+    .handOne{
+        width:120px;
+    }
+
+    /*  header gateway */
+    .gatewayTxtContainer{
+        font-size:20px;   
+    }
+
+    .gatewayTxt{
+        width:388px;
+    }
+
+    .ovalPrism{
+        left:350px;
+        width:100px;
+        top:820px;
+    }
+
+}
+
+   

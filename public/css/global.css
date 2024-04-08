@@ -1,0 +1,40 @@
+
+@font-face {
+    font-family: "AveriumRegular";
+    src: url("../fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: "AveriumBlack";
+    src: url("../fonts/Poppins-Black.ttf");
+}
+
+*{
+    margin:0px;
+    top:0;
+    left:0;
+    box-sizing: border-box;
+    font-family:"AveriumRegular";
+    user-select: none;
+    user-zoom: none;
+}
+
+body{
+    background-image:url("../images/bg.png");
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+ul{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+button{
+    border-style:solid;
+    border-color:transparent;
+    cursor:pointer;
+}

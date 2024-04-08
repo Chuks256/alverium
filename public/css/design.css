@@ -1,0 +1,283 @@
+/* mission and vision stlying */
+.missionVisionSection{
+    margin:190px;
+    display: flex;
+    flex-direction: column;
+    gap:3em;
+    justify-content: center;
+    align-items: center;
+}
+
+.missionVisionTxt{
+    font-size:45px;
+    font-family: "AveriumBlack";
+}
+
+.colorTxt{
+    color:rgb(255, 121, 73);
+    font-family: "AveriumBlack";
+}
+
+.collabBox{
+    width:500px;
+    height:89%;
+    padding:100px;
+    border-radius:20px;
+    background-image:linear-gradient(to top,rgb(0, 0, 0),rgba(255, 255, 255, 0)), url("../images/collab.png");
+}
+
+.collabDetails{
+    color:white;
+    font-size:14px;
+    margin-top:105%;
+    text-align:center;
+}
+
+.missionVisionContainer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:1em;
+}
+
+.missionBox,.visionBox{
+    display: flex;
+    gap:0.5em;
+    flex-direction: column;
+    padding:25px;
+    border-radius:10px;
+    height:260px;
+    background-color: rgb(255, 121, 73);
+}
+
+.visionBox{
+    background-color: rgb(255, 222, 73);
+}
+
+.missionDetails,.visionDetails{
+    font-size:17px;
+}
+
+.subMissionBoxContainer{
+    display:flex;
+    gap:1em;
+    flex-direction:column;
+}
+/*  mission and vision stylinh */
+
+/*  courses styling  */
+.courseSection{
+    display: flex;
+    flex-direction: column;
+    gap:4em;
+    justify-content: center;
+    align-items: center;
+}
+.courseTxt{
+    font-size:45px;
+    font-family: "AveriumBlack";
+}
+
+.courseImg{
+    width:300px;
+    border-radius:10px;
+    height:300px;
+    object-fit:cover;
+   
+}
+
+.courseContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:2em;
+}
+
+._course_Container{
+    cursor: pointer;
+    transition:linear,300ms;
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+._course_Container:hover{
+    transform: scale(90%);
+}
+
+.seeMoreCourseBtn{
+    padding:10px;
+    background-color:rgb(255, 178, 152);
+    border-radius:15px;
+    font-weight:bold;
+    width:150px;
+}
+
+/* contact section beginning */
+.contactSection{
+    margin:150px;
+    display: flex;
+    flex-direction: column;
+    gap:2em;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactTxt{
+    font-size: 45px;
+    font-family: "AveriumBlack";
+}
+
+.contactFormContainer{
+    display: flex;
+    gap:5em;
+    align-items: center;
+}
+
+.contact_details{
+    width:350px;
+}
+
+.contact_form_elem{
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+    padding:30px;
+    background-color:rgb(255, 212, 197);
+    width: 350px;
+    border-radius:5px;
+}
+
+input,textarea{
+    border-style:solid;
+    border-color:transparent;
+    padding:10px;
+    background-color:rgb(250, 190, 168);
+    font-size:15px;
+    border-radius:5px;
+    outline: none;
+}
+
+textarea{
+   resize: none; 
+}
+
+.form_submit_btn{
+    border-radius:5px;
+    padding:10px;
+    font-weight: bold;
+    background-color:rgb(255, 121, 73);
+    color:white;
+    transition:linear,100ms;
+}
+
+.form_submit_btn:active{
+transform:scale(90%);
+}
+/* contact section ending */
+
+
+/* footer styling section beginning */
+footer{
+    background-color: rgb(17, 17, 17);
+    width:100%;
+    min-height:500px;
+    padding:80px;
+    display: flex;
+    color:white;
+    gap:10em;
+    align-items: center;
+}
+
+.footerCourseContainer,.footerContactContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerContactList,.footerCourseList{
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+}
+
+#footerlink{
+    color:white;
+}
+
+.footeritems{
+    color:white;
+}
+
+.footerItemLinksContainer{
+    display: flex;
+    gap:10em;
+}
+/* footer styling section ending  */
+
+/*  responsive design */
+@media screen and (max-width:1000px){
+    .missionVisionTxt{
+        font-size:35px;
+    }
+
+    .collabBox{
+        width:400px;
+        height: 400px;
+        padding:50px
+    }
+
+    .collabDetails{
+        margin-top:70%;
+    }
+
+    .missionVisionContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*  course section  */
+    .courseTxt{
+        font-size: 35px;
+    }
+
+    .courseContainer{
+        display: flex;
+        flex-direction:column;
+    }
+
+    .courseSection{
+        gap:3em;
+    }
+
+    .courseImg{
+        width:350px;
+    }
+
+    /*  reach out || contact form  */
+.contactTxt{
+    font-size:35px;
+}
+.contactFormDetails{
+    text-align: center;
+}
+.contactFormContainer{
+    gap:3em;
+    flex-direction:column;
+}
+
+/* footer section */
+
+footer{
+    flex-direction:column;
+    gap:1em;
+}
+
+.footerItemLinksContainer{
+    gap:2em;
+}
+
+
+}
