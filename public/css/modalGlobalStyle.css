@@ -5,8 +5,66 @@
     position: absolute;
     display:none;
     top:0;
-    z-index:3;
+    z-index:5;
     bottom: 0;   
     backdrop-filter: blur(2px);
     transition:linear,1000ms;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.modalBoxContainer{
+    padding:30px;
+    width:350px;
+    height:400px;
+    background:white;
+    border-radius:10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modalTxtContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap:1em;
+}
+
+.bolt{
+    width: 40px;
+}
+
+.modalDetails{
+    font-size: 15px;
+    width:230px;
+}
+
+.modalBtnContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top:100px;
+    gap:1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.enrollNow,.maybeLater{
+    padding:13px;
+    width:250px;
+    border-radius:30px;
+    font-weight: bold;
+    transition: linear,1000ms;
+}
+
+.enrollNow{
+    background-color:rgb(247,251,54,100%) ;
+}
+
+.enrollNow:active{
+    transform: scale(60%);
+}
+.maybeLater:active{
+    transform: scale(60%);
 }
