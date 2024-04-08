@@ -5,7 +5,7 @@ window.onload=async()=>{
     await setTimeout(()=>{
         _modalContainer.style.display="flex"
         document.body.style.overflowY="hidden";
-    },1000)
+    },10)
 }
 
 _maybelater.addEventListener("click",(ev)=>{
